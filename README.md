@@ -40,7 +40,7 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Spark Environment
 
 ### Library Import
-```markdown
+```scala
 import org.apache.spark.rdd.RDD
 import org.apache.spark.mllib.fpm.AssociationRules
 import org.apache.spark.mllib.fpm.FPGrowth.FreqItemset
