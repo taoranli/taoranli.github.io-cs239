@@ -36,9 +36,10 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
 
 
-### AssociationRules
+## AssociationRules
+### Spark Environment
 
-
+### Library Import
 ```markdown
 import org.apache.spark.rdd.RDD
 import org.apache.spark.mllib.fpm.AssociationRules
