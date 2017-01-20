@@ -37,7 +37,8 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 
 
 ### AssociationRules
-# Spark Source code
+
+
 ```markdown
 import org.apache.spark.rdd.RDD
 import org.apache.spark.mllib.fpm.AssociationRules
