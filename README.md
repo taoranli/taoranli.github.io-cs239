@@ -76,7 +76,7 @@ For Java, [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-download
 
 For Scala, [https://www.scala-lang.org/download/2.11.8.html](https://www.scala-lang.org/download/2.11.8.html ) 
 
-For sbt, [http://www.scala-sbt.org/download.html(choose all platforms)](http://www.scala-sbt.org/download.html)
+For sbt, [http://www.scala-sbt.org/download.html](http://www.scala-sbt.org/download.html)(choose all platforms)
 
 For Spark, [http://spark.apache.org/downloads.html](http://spark.apache.org/downloads.html)
 
@@ -106,6 +106,6 @@ Quit and type in terminal:
 source ~/.bashrc
 ```
 
-Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,![Image of Spark build]https://github.com/taoranli/taoranli.github.io-cs239/images/spark_build.png
+Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,![Image of Spark build](https://github.com/taoranli/taoranli.github.io-cs239/images/spark_build.png)
 
 
