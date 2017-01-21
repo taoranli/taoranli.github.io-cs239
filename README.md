@@ -162,6 +162,7 @@ libraryDependencies ++= Seq("org.apache.spark" %% "spark-core" % "2.1.0",
 
 Then organize your .sbt file and .scala file like this:
 
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/structure.png)
 
 
 
