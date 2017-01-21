@@ -191,9 +191,11 @@ Our test dataset is:
  ```
  
 Result of frequent items from Spark is:
+
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/frequent_item_result.png)
 
 Result of association rule from Spark is:
+
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/association_rule_result.png)
 
 
