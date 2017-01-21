@@ -76,9 +76,9 @@ For Java, [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-download
 
 For Scala, [https://www.scala-lang.org/download/2.11.8.html](https://www.scala-lang.org/download/2.11.8.html ) 
 
-For sbt, [http://www.scala-sbt.org/download.html] (choose all platforms)(http://www.scala-sbt.org/download.html)
+For sbt, [http://www.scala-sbt.org/download.html(choose all platforms)](http://www.scala-sbt.org/download.html)
 
-For Spark, [http://spark.apache.org/downloads.html] (http://spark.apache.org/downloads.html)
+For Spark, [http://spark.apache.org/downloads.html](http://spark.apache.org/downloads.html)
 
 For Java, install it by following the instruction. For other three, unzip them to a file. Notice that the version you choose sometimes depend on the need of the whole team. Here we choose latest spark, java 8 and scala 2.11.8.
 
@@ -98,7 +98,6 @@ export SCALA_HOME=/Users/yuan/Desktop/course/scala-2.11.8
 export SBT_HOME=/Users/yuan/Desktop/course/sbt-launcher-packaging-0.13.13
 
 export PATH=$PATH:$SCALA_HOME/bin:$SBT_HOME/bin
-
 ```
 
 Quit and type in terminal:
