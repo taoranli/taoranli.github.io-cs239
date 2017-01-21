@@ -203,4 +203,4 @@ Result of association rule from Spark is:
 #### Step Six - More about Spark
 
 In the previous part, we use only one single machine to run Spark application, which is called Standalone mode. If we want to learn the power of Spark and parallel algorithm, we need to set up a cluster. To learning how to set up a Spark cluster, you can visit:
-[](http://blog.leanote.com/post/gabriellelc/Guide_For_SparkHadoop)
+[http://blog.leanote.com/post/gabriellelc/Guide_For_SparkHadoop](http://blog.leanote.com/post/gabriellelc/Guide_For_SparkHadoop)
