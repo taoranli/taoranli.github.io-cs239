@@ -107,7 +107,72 @@ source ~/.bashrc
 ```
 
 Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,
+
 ![Image of Spark build](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/spark_build.png)
+
+#### Step Three - Create a Spark application
+Since Spark 1.5.0, spark.mllib has provided a parallel implementation of FP-growth, a popular algorithm to mining frequent itemsets. Thus we can use this API to do frequent itemsets mining and rule association generation.
+
+In Spark, we can use a class called FPGrowth. This class has three method, they are:
+```
+def setMinSupport(minSupport: Double): FPGrowth.this.type   //Set min support
+
+def setNumPartitions(numPartitions: Int): FPGrowth.this.type   //Set the number of partitions used to distribute the work by parallel FP-growth (default: same as input data)
+
+def run[Item](data: RDD[Array[Item]]): FPGrowthModel[Item]    //Do training
+```
+After training, we get a class called FPGrowthModel, it has one instance and one method:
+```
+val freqItemsets: RDD[FreqItemset[Item]]   //To get frequent itemsets
+
+def generateAssociationRules(confidence: Double): RDD[Rule[Item]]   //Generates association rules for the Items in freqItemsets
+```
+Use all API above we can write a simple program to use Spark to do data mining. Create a SimpleApp.scala file and type:
+```
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkContext._
+import org.apache.spark.SparkConf
+import org.apache.spark.mllib.fpm.FPGrowth
+import org.apache.spark.rdd.RDD
+
+object SimpleApp {
+  def main(args: Array[String]) {
+
+    //initialize spark
+    val conf = new SparkConf().setAppName("Simple Application")
+    val sc = new SparkContext(conf)
+    
+    //load input file
+    val data = sc.textFile(args(0))
+    val transactions: RDD[Array[String]] = data.map(s => s.trim.split(' '))
+
+    //run FPGrowth to find freuqent itemset
+    val fpg = new FPGrowth()
+      .setMinSupport(0.5)
+      .setNumPartitions(10)
+    val model = fpg.run(transactions)
+
+    model.freqItemsets.collect().foreach { itemset =>
+      println(itemset.items.mkString("[", ",", "]") + ", " + itemset.freq)
+    }
+
+    //use frequent itemset to find association rules(only imple one more item)
+    val minConfidence = 0.5
+    model.generateAssociationRules(minConfidence).collect().foreach { rule =>
+      println(
+        rule.antecedent.mkString("[", ",", "]")
+          + " => " + rule.consequent .mkString("[", ",", "]")
+          + ", " + rule.confidence)
+    }
+
+    sc.stop()
+  }
+}
+```
+
+Notice that this API can only construct rules that have a **single** item as the consequent.
+
+
 
 
 
