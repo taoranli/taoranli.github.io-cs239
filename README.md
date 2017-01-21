@@ -70,4 +70,33 @@ results.collect().foreach { rule =>
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png) 
 
 
+#### Step One - Download all necessary files
+
+For Java, http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html(http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+For Scala, https://www.scala-lang.org/download/2.11.8.html(https://www.scala-lang.org/download/2.11.8.html ) 
+
+For sbt, http://www.scala-sbt.org/download.html (choose all platforms)(http://www.scala-sbt.org/download.html)
+
+For Spark, http://spark.apache.org/downloads.html (http://spark.apache.org/downloads.html)
+
+For Java, install it by following the instruction. For other three, unzip them to a file. Notice that the version you choose sometimes depend on the need of the whole team. Here we choose latest spark, java 8 and scala 2.11.8.
+
+#### Step Two - Edit environmental variables
+
+Add Java and Scala’s home directory to system to let Spark use. Then add sbt’s directory to use it in terminal. In terminal, type 
+```
+vim ~/.bashrc
+```
+Then type:
+```export JAVA_HOME=$(/usr/libexec/java_home)
+export SCALA_HOME=/Users/yuan/Desktop/course/scala-2.11.8
+export SBT_HOME=/Users/yuan/Desktop/course/sbt-launcher-packaging-0.13.13
+export PATH=$PATH:$SCALA_HOME/bin:$SBT_HOME/bin
+```
+Quit and type in terminal:
+```source ~/.bashrc
+```
+Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,
+
 
