@@ -164,6 +164,32 @@ Then organize your .sbt file and .scala file like this:
 
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/folder_structure.png)
 
+Then in current folder, in terminal type:
+
+```
+sbt package
+```
+If everything goes right, you can see Success in terminal.
+![Image of package](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/package.png)
+
+Finally, run the application jar file in terminal like this:
+
+```
+/Users/yuan/Desktop/course/spark-2.1.0-bin-hadoop2.7/bin/spark-submit \
+--class "SimpleApp" \
+target/scala-2.11/simple-project_2.11-1.0.jar input.txt
+```
+
+You can also use a script to avoid such a long command every time.
+
+Our test dataset is:
+  a c d
+  b c e
+  a b c e
+  b e
+Result from Spark is:
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/frequent_item_result.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/association_rule_result.png)
 
 
 
