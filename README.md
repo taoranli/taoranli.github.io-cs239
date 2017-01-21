@@ -88,12 +88,18 @@ Add Java and Scalaâ€™s home directory to system to let Spark use. Then add sbtâ€
 ```
 vim ~/.bashrc
 ```
+
 Then type:
-```export JAVA_HOME=$(/usr/libexec/java_home)
+```
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 export SCALA_HOME=/Users/yuan/Desktop/course/scala-2.11.8
+
 export SBT_HOME=/Users/yuan/Desktop/course/sbt-launcher-packaging-0.13.13
+
 export PATH=$PATH:$SCALA_HOME/bin:$SBT_HOME/bin
 ```
+
 Quit and type in terminal:
 ```source ~/.bashrc
 ```
