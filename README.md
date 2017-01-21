@@ -108,4 +108,6 @@ source ~/.bashrc
 
 Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,![Image of Spark build](https://github.com/taoranli/taoranli.github.io-cs239/images/spark_build.png)
 
+![Image of Yaktocat](https://github.com/taoranli/taoranli.github.io-cs239/blob/master/images/spark_build.png) 
+
 
