@@ -207,7 +207,7 @@ In the previous part, we use only one single machine to run Spark application, w
 
 #### References
 
-[1][Spark documentation](https://spark.apache.org/docs/latest/)
+[[1]Spark documentation](https://spark.apache.org/docs/latest/)
 
-[2][Association rule learning](https://en.wikipedia.org/wiki/Association_rule_learning#FP-growth_algorithm)
+[[2]Association rule learning](https://en.wikipedia.org/wiki/Association_rule_learning#FP-growth_algorithm)
 
