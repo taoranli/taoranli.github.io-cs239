@@ -98,6 +98,7 @@ export SCALA_HOME=/Users/yuan/Desktop/course/scala-2.11.8
 export SBT_HOME=/Users/yuan/Desktop/course/sbt-launcher-packaging-0.13.13
 
 export PATH=$PATH:$SCALA_HOME/bin:$SBT_HOME/bin
+
 ```
 
 Quit and type in terminal:
