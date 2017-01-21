@@ -42,32 +42,6 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 ### Spark Environment
 Check out Spark [documentation](https://spark.apache.org/docs/latest/)
 
-### Library Import
-```scala
-import org.apache.spark.rdd.RDD
-import org.apache.spark.mllib.fpm.AssociationRules
-import org.apache.spark.mllib.fpm.FPGrowth.FreqItemset
-
-val freqItemsets = sc.parallelize(Seq(
-  new FreqItemset(Array("a"), 15L),
-  new FreqItemset(Array("b"), 35L),
-  new FreqItemset(Array("a", "b"), 12L)
-));
-
-val ar = new AssociationRules()
-  .setMinConfidence(0.8)
-val results = ar.run(freqItemsets)
-
-results.collect().foreach { rule =>
-  println("[" + rule.antecedent.mkString(",")
-    + "=>"
-    + rule.consequent.mkString(",") + "]," + rule.confidence)
-}
-```
-
-### Demo results
-
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png) 
 
 
 #### Step One - Download all necessary files
@@ -114,6 +88,7 @@ Now you can check whether you are in the right way by typing: echo $JAVA_HOME, a
 Since Spark 1.5.0, spark.mllib has provided a parallel implementation of FP-growth, a popular algorithm to mining frequent itemsets. Thus we can use this API to do frequent itemsets mining and rule association generation.
 
 In Spark, we can use a class called FPGrowth. This class has three method, they are:
+
 ```
 def setMinSupport(minSupport: Double): FPGrowth.this.type   //Set min support
 
@@ -172,6 +147,20 @@ object SimpleApp {
 
 Notice that this API can only construct rules that have a **single** item as the consequent.
 
+#### Step Four - Run application on terminal
+Before running application, we need to use sbt to make the application into a .jar file. Then we can submit it to spark to run. To use sat, we need create a built.sbt file, and add:
+```
+name := "Simple Project"
+
+version := "1.0"
+
+scalaVersion := "2.11.7"
+
+libraryDependencies ++= Seq("org.apache.spark" %% "spark-core" % "2.1.0", 
+"org.apache.spark"  %% "spark-mllib" % "2.1.0")
+```
+
+Then organize your .sbt file and .scala file like this:
 
 
 
