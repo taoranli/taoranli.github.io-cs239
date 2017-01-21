@@ -72,13 +72,13 @@ results.collect().foreach { rule =>
 
 #### Step One - Download all necessary files
 
-For Java, http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html(http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+For Java, [http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 
-For Scala, https://www.scala-lang.org/download/2.11.8.html(https://www.scala-lang.org/download/2.11.8.html ) 
+For Scala, [https://www.scala-lang.org/download/2.11.8.html](https://www.scala-lang.org/download/2.11.8.html ) 
 
-For sbt, http://www.scala-sbt.org/download.html (choose all platforms)(http://www.scala-sbt.org/download.html)
+For sbt, [http://www.scala-sbt.org/download.html] (choose all platforms)(http://www.scala-sbt.org/download.html)
 
-For Spark, http://spark.apache.org/downloads.html (http://spark.apache.org/downloads.html)
+For Spark, [http://spark.apache.org/downloads.html] (http://spark.apache.org/downloads.html)
 
 For Java, install it by following the instruction. For other three, unzip them to a file. Notice that the version you choose sometimes depend on the need of the whole team. Here we choose latest spark, java 8 and scala 2.11.8.
 
@@ -102,8 +102,10 @@ export PATH=$PATH:$SCALA_HOME/bin:$SBT_HOME/bin
 ```
 
 Quit and type in terminal:
-```source ~/.bashrc
 ```
+source ~/.bashrc
+```
+
 Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,
 
 
