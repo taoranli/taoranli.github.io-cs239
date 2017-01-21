@@ -183,10 +183,12 @@ target/scala-2.11/simple-project_2.11-1.0.jar input.txt
 You can also use a script to avoid such a long command every time.
 
 Our test dataset is:
+```
   a c d
   b c e
   a b c e
   b e
+ ```
 Result from Spark is:
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/frequent_item_result.png)
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/association_rule_result.png)
