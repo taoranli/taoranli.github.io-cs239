@@ -110,6 +110,6 @@ Now you can check whether you are in the right way by typing: echo $JAVA_HOME, a
 
 test!
 
-![Image of Yaktocat](https://github.com/taoranli/taoranli.github.io-cs239/blob/master/images/spark_build.png) 
+![Image of Yaktocat](../images/spark_build.png) 
 
 
