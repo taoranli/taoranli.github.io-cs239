@@ -180,7 +180,7 @@ Now you could create a new Scala file and write your Spark code. By clicking the
 #### Step Six - More about Spark
 
 In the previous part, we use only one single machine to run Spark application, which is called Standalone mode. If we want to learn the power of Spark and parallel algorithm, we need to set up a cluster. To learning how to set up a Spark cluster, you can visit:
-[http://blog.leanote.com/post/gabriellelc/Guide_For_SparkHadoop](http://blog.leanote.com/post/gabriellelc/CS239)
+[http://blog.leanote.com/post/gabriellelc/CS239](http://blog.leanote.com/post/gabriellelc/CS239)
 
 #### References
 
