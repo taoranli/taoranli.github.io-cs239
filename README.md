@@ -57,6 +57,7 @@ def run[Item](data: RDD[Array[Item]]): FPGrowthModel[Item]    //Do training
 ```
 
 After training, we get a class called FPGrowthModel, it has one instance and one method:
+
 ```
 val freqItemsets: RDD[FreqItemset[Item]]   //To get frequent itemsets
 
@@ -64,6 +65,7 @@ def generateAssociationRules(confidence: Double): RDD[Rule[Item]]   //Generates 
 ```
 
 Use all API above we can write a simple program to use Spark to do data mining. Create a SimpleApp.scala file and type:
+
 ```
 import org.apache.spark.SparkContext
 import org.apache.spark.SparkContext._
