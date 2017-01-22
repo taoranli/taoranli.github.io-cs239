@@ -175,6 +175,7 @@ After creating the project with SBT, we could find a build.sbt file where we cou
 
 Now you could create a new Scala file and write your Spark code. By clicking the run button, the result will show up in console.
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create4.png)
+
 #### Step Six - More about Spark
 
 In the previous part, we use only one single machine to run Spark application, which is called Standalone mode. If we want to learn the power of Spark and parallel algorithm, we need to set up a cluster. To learning how to set up a Spark cluster, you can visit:
