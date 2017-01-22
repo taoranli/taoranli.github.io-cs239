@@ -172,7 +172,7 @@ First build a new project and use SBT to build a Scala project,then choose Scala
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create2.png)
 
 After creating the project with SBT, we could find a build.sbt file where we could add the Spark library and other needed dependencies. Refresh the SBT, it would downloaded these libraries automatically and then you could find them in External libraries.  
-![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create3.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create6.png)
 
 Now you could create a new Scala file and write your Spark code. By clicking the run button, the result will show up in console.
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create5.png)
