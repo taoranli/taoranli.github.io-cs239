@@ -146,12 +146,13 @@ target/scala-2.11/simple-project_2.11-1.0.jar input.txt
 You can also use a script to avoid such a long command every time.
 
 Our test dataset is:
+
 ```
-  a c d
-  b c e
-  a b c e
-  b e
- ```
+a c d
+b c e
+a b c e
+b e
+```
  
 Result of frequent items from Spark is:
 
