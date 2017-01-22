@@ -111,7 +111,7 @@ object SimpleApp {
 Notice that this API can only construct rules that have a **single** item as the consequent.
 
 #### Step Four - Run application on terminal
-Before running application, we need to use sbt to make the application into a .jar file. Then we can submit it to spark to run. To use sat, we need create a built.sbt file, and add:
+Before running application, we need to use sbt to make the application into a .jar file. Then we can submit it to spark to run. To use SBT, we need create a built.sbt file, and add:
 ```
 name := "Simple Project"
 
@@ -179,7 +179,7 @@ Now you could create a new Scala file and write your Spark code. By clicking the
 #### Step Six - More about Spark
 
 In the previous part, we use only one single machine to run Spark application, which is called Standalone mode. If we want to learn the power of Spark and parallel algorithm, we need to set up a cluster. To learning how to set up a Spark cluster, you can visit:
-[http://blog.leanote.com/post/gabriellelc/Guide_For_SparkHadoop](http://blog.leanote.com/post/gabriellelc/Guide_For_SparkHadoop)
+[http://blog.leanote.com/post/gabriellelc/Guide_For_SparkHadoop](http://blog.leanote.com/post/gabriellelc/CS239)
 
 #### References
 
