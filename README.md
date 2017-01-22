@@ -112,6 +112,7 @@ Notice that this API can only construct rules that have a **single** item as the
 
 #### Step Four - Run application on terminal
 Before running application, we need to use sbt to make the application into a .jar file. Then we can submit it to spark to run. To use SBT, we need create a built.sbt file, and add:
+
 ```
 name := "Simple Project"
 
