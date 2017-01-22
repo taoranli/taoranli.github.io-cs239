@@ -173,7 +173,8 @@ First build a new project and use SBT to build a Scala project,then choose Scala
 After creating the project with SBT, we could find a build.sbt file where we could add the Spark library and other needed dependencies. Refresh the SBT, it would downloaded these libraries automatically and then you could find them in External libraries.  
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create3.png)
 
-
+Now you could create a new Scala file and write your Spark code. By clicking the run button, the result will show up in console.
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create4.png)
 #### Step Six - More about Spark
 
 In the previous part, we use only one single machine to run Spark application, which is called Standalone mode. If we want to learn the power of Spark and parallel algorithm, we need to set up a cluster. To learning how to set up a Spark cluster, you can visit:
