@@ -40,7 +40,7 @@ source ~/.bashrc
 
 Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,
 
-![Image of Spark build](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG1.png)
+![Image of Spark build](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG6.png)
 
 #### Step Three - Create a Spark application
 Since Spark 1.5.0, spark.mllib has provided a parallel implementation of FP-growth, a popular algorithm to mining frequent itemsets. Thus we can use this API to do frequent itemsets mining and rule association generation.
@@ -126,7 +126,7 @@ libraryDependencies ++= Seq("org.apache.spark" %% "spark-core" % "2.1.0",
 
 Then organize your .sbt file and .scala file like this:
 
-![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/folder_structure.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG1.png)
 
 Then in current folder, in terminal type:
 
@@ -134,7 +134,7 @@ Then in current folder, in terminal type:
 sbt package
 ```
 If everything goes right, you can see Success in terminal.
-![Image of package](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/package.png)
+![Image of package](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG4.png)
 
 Finally, run the application jar file in terminal like this:
 
@@ -157,11 +157,11 @@ b e
  
 Result of frequent items from Spark is:
 
-![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/frequent_item_result.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG5.png)
 
 Result of association rule from Spark is:
 
-![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/association_rule_result.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG7.png)
 
 #### Step Five - Run application on IDE
 
