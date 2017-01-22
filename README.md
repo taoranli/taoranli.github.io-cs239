@@ -174,7 +174,7 @@ After creating the project with SBT, we could find a build.sbt file where we cou
 ![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create3.png)
 
 Now you could create a new Scala file and write your Spark code. By clicking the run button, the result will show up in console.
-![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create4.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create5.png)
 
 #### Step Six - More about Spark
 
