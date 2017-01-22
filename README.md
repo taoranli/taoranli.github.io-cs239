@@ -40,7 +40,7 @@ source ~/.bashrc
 
 Now you can check whether you are in the right way by typing: echo $JAVA_HOME, and sbt version. If you have do right, it will appear some information. For example,
 
-![Image of Spark build](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/spark_build.png)
+![Image of Spark build](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/spark_build.png 100x100)
 
 #### Step Three - Create a Spark application
 Since Spark 1.5.0, spark.mllib has provided a parallel implementation of FP-growth, a popular algorithm to mining frequent itemsets. Thus we can use this API to do frequent itemsets mining and rule association generation.
