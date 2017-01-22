@@ -47,6 +47,7 @@ Since Spark 1.5.0, spark.mllib has provided a parallel implementation of FP-grow
 
 In Spark, we can use a class called FPGrowth. This class has three method, they are:
 
+
 ```
 def setMinSupport(minSupport: Double): FPGrowth.this.type   //Set min support
 
@@ -54,12 +55,14 @@ def setNumPartitions(numPartitions: Int): FPGrowth.this.type   //Set the number 
 
 def run[Item](data: RDD[Array[Item]]): FPGrowthModel[Item]    //Do training
 ```
+
 After training, we get a class called FPGrowthModel, it has one instance and one method:
 ```
 val freqItemsets: RDD[FreqItemset[Item]]   //To get frequent itemsets
 
 def generateAssociationRules(confidence: Double): RDD[Rule[Item]]   //Generates association rules for the Items in freqItemsets
 ```
+
 Use all API above we can write a simple program to use Spark to do data mining. Create a SimpleApp.scala file and type:
 ```
 import org.apache.spark.SparkContext
