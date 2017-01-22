@@ -167,6 +167,8 @@ Result of association rule from Spark is:
 If you just want to use Spark locally, using Intellij Idea is a much easier way to write code and debug. Intellij Idea provides SBT which is an open source build tool for Scala and Java projects. So we will use SBT to build Spark progrem in Intellij Idea.
 
 First build a new project and choose use SBT to build a Scala project and then choose Scala version, SBT version and Java SDK.
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/create1.png)
+
 
 
 #### Step Six - More about Spark
