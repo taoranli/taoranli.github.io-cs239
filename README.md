@@ -157,11 +157,11 @@ b e
  
 Result of frequent items from Spark is:
 
-![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG5.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG7.png)
 
 Result of association rule from Spark is:
 
-![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG7.png)
+![Image of structure](https://github.com/taoranli/taoranli.github.io-cs239/raw/master/images/WechatIMG5.png)
 
 #### Step Five - Run application on IDE
 
